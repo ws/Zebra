@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Stripe form</title>
+	<title>Zebra</title>
 
 	<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
 
@@ -15,19 +15,19 @@
 			type = Stripe.cardType(card);
 			
 			if (type == "Visa") {
-				$("#cardType").attr("src","img/visa_24.png");
+				$("#cardType").attr("src","resources/img/visa_24.png");
 				$("#cardType").attr("alt", type);
 			} else if (type == "American Express") {
-				$("#cardType").attr("src","img/american_express_24.png");
+				$("#cardType").attr("src","resources/img/american_express_24.png");
 				$("#cardType").attr("alt", type);
 			} else if (type == "JCB") {
-				$("#cardType").attr("src","img/jcb_24.png");
+				$("#cardType").attr("src","resources/img/jcb_24.png");
 				$("#cardType").attr("alt", type);
 			} else if (type == "Discover") {
-				$("#cardType").attr("src","img/discover_24.png");
+				$("#cardType").attr("src","resources/img/discover_24.png");
 				$("#cardType").attr("alt", type);
 			} else if (type == "MasterCard") {
-				$("#cardType").attr("src","img/mastercard_24.png");
+				$("#cardType").attr("src","resources/img/mastercard_24.png");
 				$("#cardType").attr("alt", type);
 			} else {
 				$("#cardType").attr("src","data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==");
@@ -67,7 +67,7 @@
 		
 		function fetchZIP(zip) {
 			if (zip !== "") {
-				$("#lookupZIP").attr("src","img/spinner_24.gif");
+				$("#lookupZIP").attr("src","resources/img/spinner_24.gif");
 				$('#address-details').css('opacity', '0.6');
 				
 				$.ajax({
@@ -86,7 +86,7 @@
 						$('.address-line2').removeAttr('disabled', '');
 						
 						if (typeof(data.results.country) != "undefined" && data.results.country !== null) {
-							$("#lookupZIP").attr("src","img/flag/"+data.results.country+".png");
+							$("#lookupZIP").attr("src","resources/img/flag/"+data.results.country+".png");
 						}
 					}
 				});

@@ -1,10 +1,12 @@
 Zebra
 =====
-Stripe billing forms made hilariously easy.
+Simple Stripe billing forms.
+
+At this time, US, UK, and Domincan Rupublic postal codes are supported.
 
 Credits
 -------
-This was originally from a project commissioned by [Will Smidlein](http://smidlein.me/).
+This was originally created for a project commissioned by [Will Smidlein](http://smidlein.me/).
 
 Postal code databases:
 - DO: [henriwatson/postal-do](https://github.com/henriwatson/postal-do)

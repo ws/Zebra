@@ -11,7 +11,7 @@ $zipData = Array();
 
 switch ($country) {
 	case 'DO':
-		$rows = explode("\n", file_get_contents("data/do-zips.csv"));
+		$rows = explode("\n", file_get_contents("resources/data/do-zips.csv"));
 		
 		foreach ($rows as $row) {
 			$values = str_getcsv($row);
@@ -30,7 +30,7 @@ switch ($country) {
 			die(json_encode(Array('error' => 'No results found.', 'results' => Array())));
 		break;
 	case 'US':
-		$rows = explode("\n", file_get_contents("data/us-zips.csv"));
+		$rows = explode("\n", file_get_contents("resources/data/us-zips.csv"));
 		
 		foreach ($rows as $row) {
 			$values = str_getcsv($row);
@@ -49,7 +49,7 @@ switch ($country) {
 			die(json_encode(Array('error' => 'No results found.', 'results' => Array())));
 		break;
 	case 'GB':
-		$rows = explode("\n", file_get_contents("data/uk-zips.csv"));
+		$rows = explode("\n", file_get_contents("resources/data/uk-zips.csv"));
 		
 		$area = str_replace(" ", "", $zip);
 		if (strlen($area) < 5 || strlen($area) > 7)
