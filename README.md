@@ -4,6 +4,10 @@ Simple Stripe billing forms.
 
 At this time, US, UK, and Domincan Rupublic postal codes are supported.
 
+Demo
+-----
+You can see a [demo here](http://htmlpreview.github.com/?https://github.com/NullFear/Zebra/blob/master/form.html)
+
 Credits
 -------
 This was originally created for a project commissioned by me ([Will Smidlein](http://smidlein.me/)) and coded by ([Henri Watson](http://henriwatson.net/)).
