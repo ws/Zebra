@@ -2,22 +2,17 @@ function showCardType(card) {
 	type = Stripe.cardType(card);
 	
 	if (type == "Visa") {
-		$("#cardType").attr("src","resources/img/visa_24.png");
-		$("#cardType").attr("alt", type);
+		$(".cards :not(#visa)").fadeTo("fast", 0.3);
 	} else if (type == "American Express") {
-		$("#cardType").attr("src","resources/img/american_express_24.png");
-		$("#cardType").attr("alt", type);
+		$(".cards :not(#amex)").fadeTo("fast", 0.3);
 	} else if (type == "JCB") {
-		$("#cardType").attr("src","resources/img/jcb_24.png");
-		$("#cardType").attr("alt", type);
+		$(".cards :not(#jcb)").fadeTo("fast", 0.3);
 	} else if (type == "Discover") {
-		$("#cardType").attr("src","resources/img/discover_24.png");
-		$("#cardType").attr("alt", type);
+		$(".cards :not(#discover)").fadeTo("fast", 0.3);
 	} else if (type == "MasterCard") {
-		$("#cardType").attr("src","resources/img/mastercard_24.png");
-		$("#cardType").attr("alt", type);
+		$(".cards :not(#mastercard)").fadeTo("fast", 0.3);
 	} else {
-		$("#cardType").attr("src","data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==");
+		$(".cards").fadeTo("fast", 1);
 	}
 }
 
