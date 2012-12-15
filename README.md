@@ -6,7 +6,7 @@ At this time, US, UK, and Domincan Rupublic postal codes are supported.
 
 Credits
 -------
-This was originally created for a project commissioned by [Will Smidlein](http://smidlein.me/).
+This was originally created for a project commissioned by me ([Will Smidlein](http://smidlein.me/)) and coded by ([Henri Watson](http://henriwatson.net/)).
 
 Postal code databases:
 - DO: [henriwatson/postal-do](https://github.com/henriwatson/postal-do)
